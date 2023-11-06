@@ -28,8 +28,6 @@ const BlogList = async () => {
             .eq("id", blogData.user_id)
             .single();
 
-          console.log(userData);
-
           // ブログとプロフィールのテーブルを結合
           const blog = {
             id: blogData.id,
